@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Noto+Sans&family=Raleway:wght@250&display=swap");
+@import url("sections.css");
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+
+    /* Solarized colors */
+    --base3:     #002b36;
+    --base2:     #073642;
+    --base1:     #586e75;
+    --base0:     #657b83;
+    --base00:    #839496;
+    --base01:    #93a1a1;
+    --base02:    #eee8d5;
+    --base03:    #fdf6e3;
+
+    --yellow:    #b58900;
+    --orange:    #cb4b16;
+    --red:       #dc322f;
+    --magenta:   #d33682;
+    --violet:    #6c71c4;
+    --blue:      #268bd2;
+    --cyan:      #2aa198;
+    --green:     #859900;
+
+    /* Actual color definitions */
+    --background: var(--base03);
+    --background-highlight: var(--base02);
+    --text: var(--base0);
+    --text-highlight: var(--base0);
+
+    --accent: var(--blue);
+
+    margin: 0px;
+    padding: 0px;
+
+    background-color: var(--background-highlight);
+    color: var(--text);
+}
+
+body.dark {
+    --base03:    #002b36;
+    --base02:    #073642;
+    --base01:    #586e75;
+    --base00:    #657b83;
+    --base0:     #839496;
+    --base1:     #93a1a1;
+    --base2:     #eee8d5;
+    --base3:     #fdf6e3;
+}
+
+main {
+    margin: 0px auto;
+    padding: 2em;
+    width: 75vw;
+    box-sizing: border-box;
+
+    background-color: var(--background);
+}
+
+header {
+    margin: 0px auto;
+    padding-block: 3em;
+    padding-inline: 5em;
+    width: 75vw;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--background);
+    border-bottom: 2px solid var(--accent);
+}
+
+header img {
+    height: 15vh;
+    border-radius: 4px;
+    margin-left: auto;
+}
+
+header> div {
+    margin: 0px;
+    width: auto;
+}
+
+header> div> div {
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    color: var(--accent);
+}
+
+.subtitle {
+    font-size: 3em;
+}
+
+footer {
+    margin: 0px auto;
+    padding: 2em;
+    width: 75vw;
+    box-sizing: border-box;
+
+    border-top: 2px solid var(--accent);
+    background-color: var(--background);
+}
+
+pre {
+    font-family: 'Fira Mono', monospace;
+}
+
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    color: var(--accent);
+}
+
+a, a:active, a:visited { 
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p {
+    text-indent: 2em;
+}
+
+table,
+th,
+td {
+    border: 2px solid var(--accent);
+}
+
+th, td {
+    padding: 4px;
+}
+
+table {
+    background-color: var(--background-highlight);
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+h1 {
+    clear: both;
+}
+
+.right {
+    float: right;
+    clear: right;
+    max-width: 25vw;
+
+    margin-inline: 2em;
+}
+
+figure {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+
+    counter-increment: figure;
+
+    background-color: var(--background-highlight);
+    border: 2px solid var(--accent);
+}
+
+/*
+figure> :first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+figure> :last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px
+}*/
+
+figure>figcaption {
+    border-top: 2px solid var(--accent);
+    text-align: center;
+}
+
+figure>figcaption::before {
+    content: "Obrázek "counter(figure) ": ";
+}
+
+.trivia {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    min-height: 80px;
+
+    text-indent: 0px;
+    vertical-align: middle;
+    padding-left: 80px;
+    margin: 2em;
+
+    border: 2px solid var(--accent);
+    border-left-width: 15px;
+
+    background-color: var(--background-highlight);
+    background-image: url(img/info.svg);
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: bottom 50% left 5px;
+}
