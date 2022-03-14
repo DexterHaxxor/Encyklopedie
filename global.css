@@ -38,6 +38,10 @@ body {
     color: var(--text);
 }
 
+.content > :not(:last-child) {
+    border-bottom: 2px solid var(--accent);
+}
+
 body.dark {
     --base03:    #002b36;
     --base02:    #073642;
@@ -69,7 +73,6 @@ header {
     flex-direction: row;
     align-items: center;
     background-color: var(--background);
-    border-bottom: 2px solid var(--accent);
 }
 
 header img {
@@ -100,7 +103,6 @@ footer {
     width: 75vw;
     box-sizing: border-box;
 
-    border-top: 2px solid var(--accent);
     background-color: var(--background);
 }
 
@@ -187,7 +189,9 @@ figure> :last-child {
 figure>figcaption {
     text-align: center;
     background-color: #073642d0;
-    transform: translateY(100%);
+
+    transform-origin: right;
+    transform: scaleX(0%);
 
     transition: transform .2s ease;
 
@@ -198,7 +202,8 @@ figure>figcaption {
 }
 
 figure:hover> figcaption {
-    transform: translateY(0%);
+    transform-origin: left;
+    transform: scaleX(100%);
 }
 
 figure>figcaption::before {
