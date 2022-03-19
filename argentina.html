@@ -3,16 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Encyklopedie</title>
 
+    <link rel="stylesheet" href="sections.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="css/viewer.min.css">
+
+    <script defer src="js/viewer.min.js"></script>
+    <script defer src="js/gallery.js"></script>
+    <script defer src="js/menu.js"></script>
 </head>
 <body class="dark">
-    <div class="content">
+    <div id="content">
+        <nav>
+            <ul>
+                <li><a href="index.html">Úvod</a></li>
+                <li>
+                    <a href="javascript:void(0);">Země</a>
+                    <ul class="triangle">
+                        <li><a href="argentina.html">Argentina</a></li>
+                        <li><a href="brazilie.html">Brazílie</a></li>
+                        <li><a href="kolumbie.html">Kolumbie</a></li>
+                        <li><a href="chile.html">Chile</a></li>
+                        <li><a href="venezuela.html">Venezuela</a></li>
+                    </ul>
+                </li>
+                <li><a href="mapy.html">Mapy</a></li>
+                <li><a href="odkazy.html">Odkazy</a></li>
+            </ul>
+        </nav>
         <header>
             <div>
-                <div>Encyklopedie</div>
+                <div class="title">Encyklopedie</div>
                 <div class="subtitle">Argentina</div>
             </div>
             <img src="img/argentina.png" alt="Vlajka Argentiny">
