@@ -147,7 +147,6 @@ nav ul ul > li > * {
     visibility: visible;
 }
 
-
 @media (hover: hover) {
     nav ul li:hover ul {
         opacity: 1;
@@ -304,10 +303,22 @@ table {
     border-spacing: 0;
 }
 
-tr:first-child td:first-child, tr:first-child th:first-child { border-top-left-radius: var(--radius); }
-tr:first-child td:last-child, tr:first-child th:last-child { border-top-right-radius: var(--radius); }
-tr:last-child td:first-child, tr:last-child th:first-child  { border-bottom-left-radius: var(--radius); }
-tr:last-child td:last-child, tr:last-child th:last-child { border-bottom-right-radius: var(--radius); }
+tr:first-child td:first-child,
+tr:first-child th:first-child {
+    border-top-left-radius: var(--radius);
+}
+tr:first-child td:last-child,
+tr:first-child th:last-child {
+    border-top-right-radius: var(--radius);
+}
+tr:last-child td:first-child,
+tr:last-child th:first-child {
+    border-bottom-left-radius: var(--radius);
+}
+tr:last-child td:last-child,
+tr:last-child th:last-child {
+    border-bottom-right-radius: var(--radius);
+}
 
 img {
     cursor: zoom-in;
@@ -396,7 +407,7 @@ figure > figcaption::before {
     border-radius: var(--radius);
 
     background-color: var(--background-highlight);
-    background-image: url(img/info.svg);
+    background-image: url(../img/info.svg);
     background-repeat: no-repeat;
     background-size: 70px;
     background-position: bottom 50% left 5px;

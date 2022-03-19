@@ -26,7 +26,8 @@ h3 {
 }
 
 h3::before {
-    content: counter(section-1) "." counter(section-2) "." counter(section-3) ". ";
+    content: counter(section-1) "." counter(section-2) "." counter(section-3)
+        ". ";
 }
 
 h4 {
@@ -35,7 +36,8 @@ h4 {
 }
 
 h4::before {
-    content: counter(section-1) "." counter(section-2) "." counter(section-3) "." counter(section-4) ". ";
+    content: counter(section-1) "." counter(section-2) "." counter(section-3)
+        "." counter(section-4) ". ";
 }
 
 h5 {
@@ -44,7 +46,8 @@ h5 {
 }
 
 h5::before {
-    content: counter(section-1) "." counter(section-2) "." counter(section-3) "." counter(section-4) "." counter(section-5) ". ";
+    content: counter(section-1) "." counter(section-2) "." counter(section-3)
+        "." counter(section-4) "." counter(section-5) ". ";
 }
 
 h6 {
@@ -52,5 +55,7 @@ h6 {
 }
 
 h6::before {
-    content: counter(section-1) "." counter(section-2) "." counter(section-3) "." counter(section-4) "." counter(section-5) "." counter(section-6) ". ";
+    content: counter(section-1) "." counter(section-2) "." counter(section-3)
+        "." counter(section-4) "." counter(section-5) "." counter(section-6)
+        ". ";
 }
