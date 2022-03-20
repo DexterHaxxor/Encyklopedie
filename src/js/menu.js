@@ -8,7 +8,10 @@
         if (this.matches) {
             for (const menu of document.querySelectorAll("nav ul ul")) {
                 const link = menu.previousElementSibling
-                const handler = () => menu.classList.toggle("show")
+                const handler = e => {
+                    menu.classList.toggle("show")
+                    e.preventDefault()
+                }
                 link.addEventListener("click", handler)
                 cleanup.push(() => link.removeEventListener("click", handler))
             }

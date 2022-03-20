@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<sergey-import src="head">
+    <title><sergey-slot name="title" /></title>
+</sergey-import>
+
+<body class="dark">
+    <div id="content">
+        <sergey-import src="navigation" />
+        <header>
+            <div>
+                <div class="title">Encyklopedie</div>
+                <div class="subtitle"><sergey-slot name="title" /></div>
+            </div>
+            <sergey-slot name="flag" />
+        </header>
+
+        <main>
+            <sergey-slot />
+        </main>
+        
+        <sergey-import src="footer" />
+    </div>
+</body>
+</html>

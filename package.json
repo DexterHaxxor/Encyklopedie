@@ -4,12 +4,12 @@
   "main": "index.js",
   "repository": "https://github.com/dexterfoxy/Encyklopedie.git",
   "author": "dexterfoxy <jadefoxboi@outlook.com>",
-  "license": "MIT",
+  "license": "CC-BY-4.0",
   "devDependencies": {
     "sergey": "^0.0.13"
   },
   "scripts": {
-    "start": "sergey",
-    "serve": "sergey --watch"
+    "build": "sergey --root=./src/ --output=../dist/",
+    "serve": "sergey --root=./src/ --output=../dist/ --watch"
   }
 }
