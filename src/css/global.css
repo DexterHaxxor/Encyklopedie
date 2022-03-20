@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Noto+Sans&family=Raleway:wght@250&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:wght@250&display=swap");
 
 /* prettier-ignore */
 body {
@@ -218,10 +218,6 @@ header > div > div {
     .subtitle {
         font-size: 3em;
     }
-}
-
-pre {
-    font-family: "Fira Mono", monospace;
 }
 
 h1,
