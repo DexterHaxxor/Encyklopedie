@@ -1,0 +1,16 @@
+{
+  "name": "encyklopedie",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dexterfoxy/Encyklopedie.git",
+  "author": "dexterfoxy <jadefoxboi@outlook.com>",
+  "license": "MIT",
+  "source": "./argentina.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.3.2"
+  }
+}
