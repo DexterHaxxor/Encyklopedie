@@ -167,6 +167,12 @@ nav ul ul > li > * {
     }
 }
 
+header {
+    background-image: url(../img/globe.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 header img {
     border-radius: var(--radius);
     width: 300px;
