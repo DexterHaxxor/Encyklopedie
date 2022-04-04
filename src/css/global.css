@@ -351,7 +351,7 @@ figure > figcaption {
     figure > figcaption {
         transform-origin: right;
         transform: scaleX(0%);
-        transition: transform 0.2s ease;
+        transition: transform 0.2s ease-out;
     }
 
     figure:hover > figcaption {
